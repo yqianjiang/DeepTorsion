@@ -4,6 +4,13 @@ DeepTorsion is a solution for torsional eye tracking based on deep convolutional
 
 ## Getting Started
 
+### Prerequisites
+A python distribution is required, and the necessary packages are list in requirements.txt, you can run:
+```
+$ pip install -r requirements.txt 
+```
+
+### Quick Start
 To fit the model with your own training data, use "--fit data_dir" as follow:
 ```
 $ python main.py --fit data/training
@@ -13,20 +20,21 @@ $ python main.py --fit data/training --modelpath model/model.h5
 ```
 
 
-To test the trained model, run:
+To test the trained model, "--modelpath" flag is required to provide the model to test. run:
 ```
-# "--modelpath" flag is required to provide the model to test. 
 $ python main.py --test data/testing --modelpath model/model.h5
 ```
 
 You can specify some arguments for training, such as batch size, epochs, image size, as follow:
+
+To specify image size, use --size (h, w)
 ```
-# to specify image size, use --size (h, w)
-$ python main.py --fit data/training --modelpath model/model.h5 --size (60, 720) --batchsize 16 --gpu 0
+$ python main.py --fit data/training --modelpath model/model.h5 --size 60,720 --batchsize 16 --gpu 0
+```
 
-# to use stn network, add --stn
+To use the STN Network, add --stn
+```
 $ python main.py --fit data/training --modelpath model/model.h5 --stn
-
 ```
 
 
