@@ -1,4 +1,4 @@
-from train.train_STN import fit_model_dir
+from .train.train_STN import fit_model_dir
 import sys
 import os
 import time

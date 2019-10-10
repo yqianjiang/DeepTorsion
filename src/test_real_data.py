@@ -1,11 +1,11 @@
 import sys
 import os
 import logging
-from torsion_inference.torsion_inference import torsion_inferer
+from .torsion_inference.torsion_inference import torsion_inferer
 
 from keras.models import load_model
 import keras.backend as K
-from utils.load_stn import load_stn
+from .utils.load_stn import load_stn
 import time
 
 
