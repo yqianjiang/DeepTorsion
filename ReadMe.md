@@ -37,7 +37,8 @@ $ python main.py --fit data/training --modelpath model/model.h5 --stn
 * **Yiu Yuk Hoi** - *Initial work*
 
 ## Links to other related papers
-[arXiv](https://arxiv.org/)
+Yiu YH, Aboulatta M, Raiser T, Ophey L, Flanagin VL, zu Eulenburg P, Ahmadi SA. DeepVOG: Open-source Pupil Segmentation and Gaze Estimation in Neuroscience using Deep Learning. Journal of neuroscience methods. vol. 324, 2019, DOI: https://doi.org/10.1016/j.jneumeth.2019.05.016
+
 
 ## License
 
